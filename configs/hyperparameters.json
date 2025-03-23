@@ -1,5 +1,5 @@
 {
-    "dataset": "/kaggle/input/mmmai-simulated-data/ds004795-download",
+    "dataset": "/kaggle/input/mmmai-regist-data/MR-ART-Regist",
     "data_ids": {
       "/kaggle/input/mmmai-simulated-data/ds004795-download": "Motion_Simulated",
       "/kaggle/input/mmmai-regist-data/MR-ART-Regist": "Motion",
