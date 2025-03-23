@@ -1,9 +1,8 @@
 import sys
 import os
 
-# Add the project root to sys.path
-sys.path.append("/kaggle/working/")
-
+# Add the mmmai_codebase directory to sys.path
+sys.path.append("/kaggle/working/mmmai_codebase/")
 
 import math
 import argparse
@@ -11,9 +10,10 @@ import tensorflow as tf
 import numpy as np
 import json
 from tqdm import tqdm
-from tensorflow.keras.callbacks import CSVLogger, LearningRateScheduler, ModelCheckpoint
-from tensorflow.keras.optimizers import Adam
-from tensorflow.keras.models import load_model
+# from tensorflow.keras.callbacks import CSVLogger, LearningRateScheduler, ModelCheckpoint
+# from tensorflow.keras.optimizers import Adam
+# from tensorflow.keras.models import load_model
+# from ..utils.losses import Losses
 
 from src.utils.losses import Losses 
 from networks.wat_stacked_unets import WATStackedUNets
