@@ -184,7 +184,7 @@ def train(config):
 
         # Compile model with updated total_loss function
         model.compile(
-            loss=total_loss(w_comb, b_comb),  # Pass w_comb and b_comb to total_loss
+            loss=total_loss(w_comb, b_comb,n_loss),  # Pass w_comb and b_comb to total_loss
             optimizer=Adam(learning_rate=LEARNING_RATE),
             metrics=[loss_and_metric.ssim_score, 'mse', loss_and_metric.psnr]
         )
