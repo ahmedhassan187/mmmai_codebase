@@ -77,8 +77,8 @@ def load_loss_functions(loss_function_names):
 def load_model_architecture(model_architecture_name):
     """Load loss functions dynamically based on the names from the config."""
     available_models = {
-        "stacked_unets": StackedUNets,
-        "wat_stacked_unets": WATStackedUNets 
+        "stacked_unets": StackedUNets(),
+        "wat_stacked_unets": WATStackedUNets() 
         # Add Generative networks here
         }
     
