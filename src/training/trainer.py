@@ -60,9 +60,9 @@ def update_hyperparameters_with_args(config, args):
 def load_loss_functions(loss_function_names):
     """Load loss functions dynamically based on the names from the config."""
     available_losses = {
-        "ssim_loss": loss_and_metric().ssim_loss,
-        "perceptual_loss": loss_and_metric().perceptual_loss,
-        "mae_loss": loss_and_metric().mae_loss
+        "ssim_loss": loss_and_metric.ssim_loss,
+        "perceptual_loss": loss_and_metric.perceptual_loss,
+        "mae_loss": loss_and_metric.mae_loss
     }
     
     losses = []
